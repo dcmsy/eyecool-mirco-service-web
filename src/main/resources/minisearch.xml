@@ -1,0 +1,96 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <!-- 日志事件监听器 
+    <bean id="loggingEventListener" class="cn.eyecool.minisearch.event.logging.LoggingEventListener"/>-->
+
+    <!--
+    默认请求生成序号
+    -->
+    <bean
+            id="requestSequenceGenerator"
+            class="cn.eyecool.minisearch.request.DefaultRequestSequenceGenerator"
+    />
+
+    <!--
+    数据同步服务器信息(初始)
+    -->
+    <bean
+            id="rpcDataSyncMasterBuilder"
+            class="cn.eyecool.minisearch.service.commons.ServerInfo"
+            factory-method="newBuilder"
+    >
+        <property name="serverId" value="DataLoader"/>
+        <property name="host" value="127.0.0.1"/>
+        <property name="port" value="7777"/>
+    </bean>
+    <bean
+            id="rpcDataSyncMaster"
+            class="cn.eyecool.minisearch.service.commons.ServerInfo"
+            factory-bean="rpcDataSyncMasterBuilder"
+            factory-method="build"
+    />
+
+    <!--
+    数据同步客户端请求信息生成器
+    -->
+    <bean
+            id="rpcCallerInfoBuilder"
+            class="cn.eyecool.minisearch.service.commons.ServerInfo"
+            factory-method="newBuilder"
+    >
+        <property name="serverId" value="ExampleClient"/>
+        <property name="host" value="127.0.0.1"/>
+        <property name="vendor" value="eyecool.cn"/>
+    </bean>
+    <bean
+            id="rpcCallerInfo"
+            class="cn.eyecool.minisearch.service.commons.ServerInfo"
+            factory-bean="rpcCallerInfoBuilder"
+            factory-method="build"
+    />
+    <bean
+            id="rpcDataSyncRequesterBuilder"
+            class="cn.eyecool.minisearch.service.commons.Requester"
+            factory-method="newBuilder"
+    >
+        <property name="caller" ref="rpcCallerInfo"/>
+    </bean>
+
+    <!--  <bean
+            id="rpcDataRegister"
+            class="cn.eyecool.minisearch.consumer.RpcDataRegister"
+        >
+        <property name="master" ref="rpcDataSyncMaster"/>
+        <property name="requesterBuilder" ref="rpcDataSyncRequesterBuilder"/>
+        <property name="generator" ref="requestSequenceGenerator"/>
+    </bean>-->
+
+    <!--
+    默认请求信息生成器
+    使用@Qulifer("globalRequesterBuilder")
+    -->
+    <bean
+            id="globalCallerInfoBuilder"
+            class="cn.eyecool.minisearch.service.commons.ServerInfo"
+            factory-method="newBuilder"
+    >
+        <property name="serverId" value="ExampleClient"/>
+        <property name="host" value="127.0.0.1"/>
+        <property name="vendor" value="eyecool.cn"/>
+    </bean>
+    <bean
+            id="globalCallerInfo"
+            class="cn.eyecool.minisearch.service.commons.ServerInfo"
+            factory-bean="globalCallerInfoBuilder"
+            factory-method="build"
+    />
+    <bean
+            id="globalRequesterBuilder"
+            class="cn.eyecool.minisearch.service.commons.Requester"
+            factory-method="newBuilder"
+    >
+        <property name="caller" ref="globalCallerInfo"/>
+    </bean>
+</beans>

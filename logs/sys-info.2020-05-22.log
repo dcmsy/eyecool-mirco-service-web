@@ -1,0 +1,538 @@
+10:30:51.222 [main] INFO  c.e.s.w.ServiceWebApplication - [logStarting,50] - Starting ServiceWebApplication on computer.local with PID 10656 (/Users/dcmsy/idea-workspace/eyecool-mirco-service-web/target/classes started by dcmsy in /Users/dcmsy/idea-workspace/eyecool-mirco-service-web)
+10:30:51.232 [main] INFO  c.e.s.w.ServiceWebApplication - [logStartupProfileInfo,659] - No active profile set, falling back to default profiles: default
+10:30:51.379 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - [prepareRefresh,590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48d5f34e: startup date [Fri May 22 10:30:51 CST 2020]; root of context hierarchy
+10:30:52.679 [main] INFO  o.s.b.f.x.XmlBeanDefinitionReader - [loadBeanDefinitions,316] - Loading XML bean definitions from URL [file:/Users/dcmsy/idea-workspace/eyecool-mirco-service-web/target/classes/minisearch.xml]
+10:30:53.599 [main] INFO  c.e.g.a.GrpcServicesBeanFactoryPostProcessor - [postProcessBeanFactory,47] - Trying to enhance bean factory(org.springframework.beans.factory.support.DefaultListableBeanFactory)
+10:30:53.610 [main] INFO  c.e.g.a.GrpcServicesBeanFactoryPostProcessor - [postProcessBeanFactory,52] - Enhanced bean factory(org.springframework.beans.factory.support.DefaultListableBeanFactory) for Grpc Client Autowired.
+10:30:53.636 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - [<init>,154] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:30:54.573 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,91] - Tomcat initialized with port(s): 8800 (http)
+10:30:54.784 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 3406 ms
+10:30:55.168 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - [addRegistration,185] - Servlet dispatcherServlet mapped to [/]
+10:30:55.175 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - [configure,244] - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:30:55.176 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - [configure,244] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:30:55.176 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - [configure,244] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:30:55.176 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - [configure,244] - Mapping filter: 'requestContextFilter' to: [/*]
+10:30:55.254 [main] INFO  c.e.g.a.GrpcServicesBeanFactoryPostProcessor - [getSuggestedValue,91] - grpc settings: cn.eyecool.grpc.autoconfiguration.GrpcServicesConfiguration@7523a3dc
+10:30:56.138 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - [registerHandler,373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:30:56.494 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - [initControllerAdviceCache,574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48d5f34e: startup date [Fri May 22 10:30:51 CST 2020]; root of context hierarchy
+10:30:56.573 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/load],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.load()
+10:30:56.575 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/faceExteaction],methods=[POST || GET]}" onto public com.eyecool.abis.callmicroservice.common.FaceExtractResult com.eyecool.service.web.controller.CallMicroserviceController.faceExteaction()
+10:30:56.575 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/faceMatch],methods=[POST || GET]}" onto public java.util.List<com.eyecool.abis.callmicroservice.common.MatchBean> com.eyecool.service.web.controller.CallMicroserviceController.faceMatch()
+10:30:56.576 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/faceMiniSearch],methods=[POST || GET]}" onto public java.util.List<com.eyecool.abis.callmicroservice.common.FaceSearchResult> com.eyecool.service.web.controller.CallMicroserviceController.faceMiniSearch()
+10:30:56.576 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/faceVideoLivenessDetection],methods=[POST || GET]}" onto public boolean com.eyecool.service.web.controller.CallMicroserviceController.faceVideoLivenessDetection()
+10:30:56.577 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/faceImageLivenessDetection],methods=[POST || GET]}" onto public boolean com.eyecool.service.web.controller.CallMicroserviceController.faceImageLivenessDetection()
+10:30:56.577 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/multiFaceDetection],methods=[POST || GET]}" onto public int com.eyecool.service.web.controller.CallMicroserviceController.multiFaceDetection()
+10:30:56.577 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/extractIrisFeature],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.extractIrisFeature()
+10:30:56.578 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/fingerExteaction],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.fingerExteaction()
+10:30:56.579 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/irisMatch],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.irisMatch()
+10:30:56.579 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/fingerMatch],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.fingerMatch()
+10:30:56.580 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/fingerMiniSearch],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.fingerMiniSearch()
+10:30:56.580 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/irisMiniSearch],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.irisMiniSearch()
+10:30:56.583 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/list],methods=[GET]}" onto public java.util.List<java.lang.String> com.eyecool.service.web.controller.TestController.getList()
+10:30:56.590 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/faceExteaction],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.faceExteaction(java.lang.String)
+10:30:56.591 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/faceMatch],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.faceMatch(java.lang.String,java.lang.String)
+10:30:56.591 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/faceMiniSearch],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.faceMiniSearch(java.lang.String,java.lang.String,java.lang.Double,java.lang.Integer)
+10:30:56.592 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/faceImageLivenessDetection],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.faceImageLivenessDetection(java.lang.String,java.lang.Double)
+10:30:56.592 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/multiFaceDetection],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.multiFaceDetection(java.lang.String)
+10:30:56.592 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/extractIrisFeature],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.extractIrisFeature(java.lang.String)
+10:30:56.593 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/fingerExteaction],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.fingerExteaction(java.lang.String)
+10:30:56.593 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/irisMatch],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.irisMatch(java.util.List<java.lang.String>)
+10:30:56.594 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/fingerMatch],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.fingerMatch(java.util.List<java.lang.String>)
+10:30:56.595 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/fingerMiniSearch],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.fingerMiniSearch(java.lang.String,java.lang.String,java.lang.Double,java.lang.Integer)
+10:30:56.595 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/irisMiniSearch],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.irisMiniSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.Double,java.lang.Integer)
+10:30:56.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/faceMatchList],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.faceMatchList(java.util.List<java.lang.String>)
+10:30:56.601 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:30:56.603 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:30:56.639 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - [registerHandler,373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:30:56.640 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - [registerHandler,373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:30:57.122 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - [afterSingletonsInstantiated,433] - Registering beans for JMX exposure on startup
+10:30:57.146 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - [finishRegistration,275] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+10:30:57.212 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,206] - Tomcat started on port(s): 8800 (http) with context path ''
+10:30:57.231 [main] INFO  c.e.s.w.ServiceWebApplication - [logStarted,59] - Started ServiceWebApplication in 7.483 seconds (JVM running for 10.827)
+10:30:57.265 [main] INFO  c.e.s.w.r.ApplicationRunnerImpl - [run,27] - =======Face-Service-Web-eyecool  is running=======
+10:33:14.757 [http-nio-8800-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,494] - FrameworkServlet 'dispatcherServlet': initialization started
+10:33:14.831 [http-nio-8800-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,509] - FrameworkServlet 'dispatcherServlet': initialization completed in 66 ms
+10:33:15.017 [http-nio-8800-exec-1] INFO  c.e.g.s.GrpcChannel - [onNameResolverStart,143] - NameResolver starts.
+10:33:15.018 [http-nio-8800-exec-1] INFO  c.e.g.s.GrpcChannel - [updateListener,100] - Update Listener.
+10:37:13.603 [Thread-20] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - [doClose,993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48d5f34e: startup date [Fri May 22 10:30:51 CST 2020]; root of context hierarchy
+10:37:13.621 [Thread-20] INFO  o.s.j.e.a.AnnotationMBeanExporter - [destroy,451] - Unregistering JMX-exposed beans on shutdown
+10:37:19.148 [main] INFO  c.e.s.w.ServiceWebApplication - [logStarting,50] - Starting ServiceWebApplication on computer.local with PID 10986 (/Users/dcmsy/idea-workspace/eyecool-mirco-service-web/target/classes started by dcmsy in /Users/dcmsy/idea-workspace/eyecool-mirco-service-web)
+10:37:19.155 [main] INFO  c.e.s.w.ServiceWebApplication - [logStartupProfileInfo,659] - No active profile set, falling back to default profiles: default
+10:37:19.285 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - [prepareRefresh,590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35a9782c: startup date [Fri May 22 10:37:19 CST 2020]; root of context hierarchy
+10:37:20.196 [main] INFO  o.s.b.f.x.XmlBeanDefinitionReader - [loadBeanDefinitions,316] - Loading XML bean definitions from URL [file:/Users/dcmsy/idea-workspace/eyecool-mirco-service-web/target/classes/minisearch.xml]
+10:37:20.685 [main] INFO  c.e.g.a.GrpcServicesBeanFactoryPostProcessor - [postProcessBeanFactory,47] - Trying to enhance bean factory(org.springframework.beans.factory.support.DefaultListableBeanFactory)
+10:37:20.686 [main] INFO  c.e.g.a.GrpcServicesBeanFactoryPostProcessor - [postProcessBeanFactory,52] - Enhanced bean factory(org.springframework.beans.factory.support.DefaultListableBeanFactory) for Grpc Client Autowired.
+10:37:20.696 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - [<init>,154] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:37:21.155 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,91] - Tomcat initialized with port(s): 8800 (http)
+10:37:21.327 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 2042 ms
+10:37:21.526 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - [addRegistration,185] - Servlet dispatcherServlet mapped to [/]
+10:37:21.531 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - [configure,244] - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:37:21.532 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - [configure,244] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:37:21.532 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - [configure,244] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:37:21.532 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - [configure,244] - Mapping filter: 'requestContextFilter' to: [/*]
+10:37:21.598 [main] INFO  c.e.g.a.GrpcServicesBeanFactoryPostProcessor - [getSuggestedValue,91] - grpc settings: cn.eyecool.grpc.autoconfiguration.GrpcServicesConfiguration@4db60246
+10:37:22.171 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - [registerHandler,373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:37:22.363 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - [initControllerAdviceCache,574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35a9782c: startup date [Fri May 22 10:37:19 CST 2020]; root of context hierarchy
+10:37:22.433 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/load],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.load()
+10:37:22.434 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/faceExteaction],methods=[POST || GET]}" onto public com.eyecool.abis.callmicroservice.common.FaceExtractResult com.eyecool.service.web.controller.CallMicroserviceController.faceExteaction()
+10:37:22.434 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/faceMatch],methods=[POST || GET]}" onto public java.util.List<com.eyecool.abis.callmicroservice.common.MatchBean> com.eyecool.service.web.controller.CallMicroserviceController.faceMatch()
+10:37:22.435 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/faceMiniSearch],methods=[POST || GET]}" onto public java.util.List<com.eyecool.abis.callmicroservice.common.FaceSearchResult> com.eyecool.service.web.controller.CallMicroserviceController.faceMiniSearch()
+10:37:22.435 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/faceVideoLivenessDetection],methods=[POST || GET]}" onto public boolean com.eyecool.service.web.controller.CallMicroserviceController.faceVideoLivenessDetection()
+10:37:22.435 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/faceImageLivenessDetection],methods=[POST || GET]}" onto public boolean com.eyecool.service.web.controller.CallMicroserviceController.faceImageLivenessDetection()
+10:37:22.436 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/multiFaceDetection],methods=[POST || GET]}" onto public int com.eyecool.service.web.controller.CallMicroserviceController.multiFaceDetection()
+10:37:22.436 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/fingerExteaction],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.fingerExteaction()
+10:37:22.436 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/fingerMatch],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.fingerMatch()
+10:37:22.436 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/fingerMiniSearch],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.fingerMiniSearch()
+10:37:22.437 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/extractIrisFeature],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.extractIrisFeature()
+10:37:22.437 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/irisMatch],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.irisMatch()
+10:37:22.438 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/irisMiniSearch],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.irisMiniSearch()
+10:37:22.440 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/list],methods=[GET]}" onto public java.util.List<java.lang.String> com.eyecool.service.web.controller.TestController.getList()
+10:37:22.446 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/faceExteaction],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.faceExteaction(java.lang.String)
+10:37:22.447 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/faceMatch],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.faceMatch(java.lang.String,java.lang.String)
+10:37:22.447 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/faceMiniSearch],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.faceMiniSearch(java.lang.String,java.lang.String,java.lang.Double,java.lang.Integer)
+10:37:22.447 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/faceImageLivenessDetection],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.faceImageLivenessDetection(java.lang.String,java.lang.Double)
+10:37:22.448 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/multiFaceDetection],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.multiFaceDetection(java.lang.String)
+10:37:22.448 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/fingerExteaction],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.fingerExteaction(java.lang.String)
+10:37:22.449 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/fingerMatch],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.fingerMatch(java.util.List<java.lang.String>)
+10:37:22.449 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/fingerMiniSearch],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.fingerMiniSearch(java.lang.String,java.lang.String,java.lang.Double,java.lang.Integer)
+10:37:22.450 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/faceMatchList],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.faceMatchList(java.util.List<java.lang.String>)
+10:37:22.452 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/extractIrisFeature],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.extractIrisFeature(java.lang.String)
+10:37:22.453 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/irisMatch],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.irisMatch(java.util.List<java.lang.String>)
+10:37:22.453 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/irisMiniSearch],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.irisMiniSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.Double,java.lang.Integer)
+10:37:22.456 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:37:22.456 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:37:22.505 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - [registerHandler,373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:37:22.506 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - [registerHandler,373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:37:22.814 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - [afterSingletonsInstantiated,433] - Registering beans for JMX exposure on startup
+10:37:22.830 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - [finishRegistration,275] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+10:37:22.875 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,206] - Tomcat started on port(s): 8800 (http) with context path ''
+10:37:22.880 [main] INFO  c.e.s.w.ServiceWebApplication - [logStarted,59] - Started ServiceWebApplication in 4.477 seconds (JVM running for 5.695)
+10:37:22.882 [main] INFO  c.e.s.w.r.ApplicationRunnerImpl - [run,27] - =======Face-Service-Web-eyecool  is running=======
+10:38:52.850 [http-nio-8800-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,494] - FrameworkServlet 'dispatcherServlet': initialization started
+10:38:52.874 [http-nio-8800-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,509] - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+10:38:52.979 [http-nio-8800-exec-1] INFO  c.e.g.s.GrpcChannel - [onNameResolverStart,143] - NameResolver starts.
+10:38:52.980 [http-nio-8800-exec-1] INFO  c.e.g.s.GrpcChannel - [updateListener,100] - Update Listener.
+10:38:53.827 [http-nio-8800-exec-1] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,162] - 00000172-3a3f-65ee-0000-000000000001, RECV: apiCallInfo --> request_sequence: "00000172-3a3f-65ee-0000-000000000001"
+received_time: 1590115133324
+response_time: 1590115133763
+timeUsedTotal: 329
+provider {
+  serverId: "Face-1:1-Server"
+  host: "0.0.0.0"
+  port: 9991
+  algType: "ID_Fpr64"
+  algVersion: "1.0.3.5"
+  featVersion: "1.0.3.5"
+  vendor: "eyecool.cn"
+  startedAt: 1590114925604
+}
+running_tasks: 1
+total_weight: 100
+
+10:38:54.002 [http-nio-8800-exec-1] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,180] - 提取特征-平台流水号[00000172-3a3f-65ee-0000-000000000001] 特征 [{
+	"algType":"ID_Fpr64",
+	"algVersion":"1.0.3.5",
+	"featVersion":"1.0.3.5",
+	"features":[
+		"REYQAAIC0AIAAAAAAAjsOYZOuj75P8e/ICP/P99Awz/k3I4/Hn+EProq4L9qtLG9Y+G7P8TkuD8Cox9Apyi0vgPOGL4LsFm+yFAMP4icm73K0NO+VTqlP1jTtT8IO4s+CO0HQF38lT+J84g/WOSUPVCfXT2zMI0/A6zTPr+Waz5aWec+fjIjwEk4Er7n91y/iE6GPzHs0L6A/4U+SHScPfaNdD/BuzzAV/w8P/Wptz8K/qy/ZFeuvyKcxj9GGR8/C3HkPtv9nL/E5xS+b6yIPbGhpjyQGLe/0Agcv4grXj95Ijg/FF4Ov7ONAT4+VhvAYRiNvqc1i7+e4SK/mVAsv/2JiT5h4CW/xEcuv5gQbr4+D4i/jd01v8L6LEAuEni/pqn0Poo8yr8CSYu+V3qwvuiLwT9f92S/RHqBPpasQ7/+cYk/eMpVv/jIwD+O58K8SaDHvzBxWL4ixFm/IgtMPhBRAkAMnJw9C9iZv8rgoD2y3ie/QqRZPxkWTb8ETlu/sgASvvTW5D/VDtc+DGbIPsZIUL8Vuoe/cizJviEpKL6VSNY+UII2QLVCcL8K0dW+YpADvu6psr1NlR6/IY1XPwE19r+oZ+I/LRvKv4tLzb2f9QDALKmaP4wecT+59kK/pNfAPGKsLr8SV5a+zFc9QHXfdz/Jipa+YPhMvu81cL/xuOG9/SKnv2J4Or18xtU+l2flP8Dbzj10P2O/IssJP9DypL/cODK/8FQtP9fsdT8Ac449R33wPuh9Fj9oS8a+0ul3vxq3Aj/7uUW/61caQBnH5D7JpuC92nyXv+wxCsAQfk6/b5CVvpsODr8NSFW/842iPveL9r5Dqiy/XttRP+3R878FmoC/QqXpPhwtyj5w92C+SUHAvsVHvj/BeRBATQs+v6jYLr/4aDu/IyqQPw1ZFUC7jfm+WvW+P2y3fj/5/dk/kA6gvslUGL8LX6K+JMSFP0tALT8cDjA/J14tP2v5BT9xpoS/piKDv0NCGMDOpKm/DkbWPqWuWT97jiO/Byz/P4ju1j8yiGk/ZPgCQL9RxL9yTU2/OToWPlGCrL+BNti+tA+pPz/1KD/+FUW/PlkBwFBmyj9oEhi/Vvz5P2T0l77TlVY/IDdEPqgjDz/ohcm9GTWzv2iCU7+t0QA/4/LEP+tMD78pTBRA8CjhPocETz9cFHU+ZaQuPwW7x749Fhs9wp+pv8w9Y70uHRu/MHJ+vZFcTL2vwqe/LsTHPgntWT6o+uq+8DGjvpByEL8cXBG/v8Czvh72Fz8uLGS9Jsmzv8cv1L4qnWg99JEEPzoc4L6dBIe/cMkBwG5FCkBDp2u+NbHFPpDoKr9ie+m/dE0ZvuQnAb94/fI+F2CkPnMkBT93kpM+eKilP+1dBz+lIzm+ChvjPxpac7+2nGs/EeKhv2kWdz8NrrQ/Ew1OP1S1bT6Y6SA7NNYJv9XDAr9MvANA5XAlwIqRO7+wIKW/kfRev6xNjb+QFLS/gLLBvs9hfr+RyVk/YzN3PlAagD8OC6U99wt2v1n1/z+ztZ8/Bx6avq0Nlb7/N7o/N2t8Pk+Aez63mZS+MwEmv0y0Wj06V9k8qAkyvzrasT95cs8/K0XhvRhufL/DXoW/lhWMPzIjJr+tC78/dlYEv08/KD20wf2+GGLKP0ZXaL+bejc+gLWGPTEUnr8zZO+/6KS8PmH9Nj5WdQY/QmMyvzlZ4z9hhYE/pjiMvUfggr8XDYo+5VdJvgkj8b+167g/31+3vbQGkj/P4ba+2kLNvk0ewb+qygU/7Wgmv2Yg/76njYS+4EdLvlXabb+xxCs/VO0awL9n1L0MJ5c/t/WPv7F2oj++shQ/XgvGPpecmj6Ibd4/ERPrPzV4Ur99Zx6+RIW8PiFDWT6wixe/iYXMP/h6jz+jUgc/ypgGPZ4psD9d4UE/fQWRP5pNdb3lCrq9rpfMvhCTljwlmb8/IEXXv9xs/r/fPdo+NbogP3fc3T56NUM++gxnP3byPT/8KnU/GZZaPwcXsz78VOA9y3pDv/TONb0BF8Y+lH+mvAnm0T4lcRo/gbjfvlnZTr+CVZG/nhszP8+E4r/NSDk/2zHWPyT3rT9Traw+hALSP9/a6D5Btw4/oH0zP3F7JT8GuIM//lFrvc39iL6Luwm/GwTSv215QT8DB16/F2+GPYh7rD6opry/A0TtPxaTkr9NPsC+CXdrPnKiW7+9lIe/qje2vWFzkD8Zry4/mfmNvtWRBb5qW1Q/rOGTv7TBm7zrurg+HtBLP+KrBcD7vQ1AeNsWPDOANr/2ha4/9+nXvq6qnz6VICy/UlrJv8ezIL7koxY/jG7pPYPfg7+UpW4/cv6KvqR9p78xjaK/lt+IP6d5Wz4bKrq9gomev0L6LL/13vu/IavjP3XTEED1732+qQ+gP57etr8LAPw9nSLav7DuiD9jgARAfdisP84E5z4jBy7A4ZwpPlsWwT9J3im/5diMPkaGkL/1yce+y1YJvzZcPr9sSey+q1sWP3Em7z6VUFy/P9fSPf0laL7N1Jw/oid1P2Aqq7/1iKy/gY8Bv1I60L439pM/yjGRPntEoD9YPdu+/wxQPy4Ghb+870+/8m+Jv1hElj1YXwc/oG//Ox/OYL/b26w+Jfmdv+2kpT9nZKQ/8Paxv0dnrD+y4/Y/lzZtvqNEqL/g6Nw9XlQIwIRIn78EEKE/2/wmvcUA378v40k/n8CFP01EJb/pa+29P22hPIjRDr8T0n6/Lr7yvmjiVj8+Cg6/"
+	],
+	"host":"0.0.0.0",
+	"serverId":"Face-1:1-Server"
+}] use time [1092ms]
+10:38:54.008 [http-nio-8800-exec-1] INFO  c.e.s.w.c.WebController - [faceExteaction,62] - =============faceExteaction:
+11:08:53.817 [grpc-default-worker-ELG-1-3] INFO  c.e.g.s.GrpcChannel - [onNameResolverShutdown,149] - NameResolver Shutdowns.
+17:58:34.884 [http-nio-8800-exec-3] INFO  c.e.g.s.GrpcChannel - [onNameResolverStart,143] - NameResolver starts.
+17:58:34.899 [http-nio-8800-exec-3] INFO  c.e.g.s.GrpcChannel - [updateListener,100] - Update Listener.
+17:58:35.422 [http-nio-8800-exec-3] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,162] - 00000172-3bd1-f449-0000-000000000002, RECV: apiCallInfo --> request_sequence: "00000172-3bd1-f449-0000-000000000002"
+received_time: 1590141515029
+response_time: 1590141515404
+timeUsedTotal: 315
+provider {
+  serverId: "Face-1:1-Server"
+  host: "0.0.0.0"
+  port: 9991
+  algType: "ID_Fpr64"
+  algVersion: "1.0.3.5"
+  featVersion: "1.0.3.5"
+  vendor: "eyecool.cn"
+  startedAt: 1590114925604
+}
+running_tasks: 1
+succeed_tasks: 1
+total_weight: 100
+
+17:58:35.448 [http-nio-8800-exec-3] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,180] - 提取特征-平台流水号[00000172-3bd1-f449-0000-000000000002] 特征 [{
+	"algType":"ID_Fpr64",
+	"algVersion":"1.0.3.5",
+	"featVersion":"1.0.3.5",
+	"features":[
+		"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"
+	],
+	"host":"0.0.0.0",
+	"serverId":"Face-1:1-Server"
+}] use time [621ms]
+17:58:35.453 [http-nio-8800-exec-3] INFO  c.e.s.w.c.WebController - [faceExteaction,62] - =============faceExteaction:
+18:01:56.024 [http-nio-8800-exec-4] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,162] - 00000172-3bd5-04ae-0000-000000000003, RECV: apiCallInfo --> request_sequence: "00000172-3bd5-04ae-0000-000000000003"
+received_time: 1590141715661
+response_time: 1590141716023
+timeUsedTotal: 312
+provider {
+  serverId: "Face-1:1-Server"
+  host: "0.0.0.0"
+  port: 9991
+  algType: "ID_Fpr64"
+  algVersion: "1.0.3.5"
+  featVersion: "1.0.3.5"
+  vendor: "eyecool.cn"
+  startedAt: 1590114925604
+}
+running_tasks: 1
+succeed_tasks: 2
+total_weight: 100
+
+18:01:56.026 [http-nio-8800-exec-4] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,180] - 提取特征-平台流水号[00000172-3bd5-04ae-0000-000000000003] 特征 [{
+	"algType":"ID_Fpr64",
+	"algVersion":"1.0.3.5",
+	"featVersion":"1.0.3.5",
+	"features":[
+		"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"
+	],
+	"host":"0.0.0.0",
+	"serverId":"Face-1:1-Server"
+}] use time [396ms]
+18:01:56.028 [http-nio-8800-exec-4] INFO  c.e.s.w.c.WebController - [faceExteaction,62] - =============faceExteaction:
+18:02:20.181 [http-nio-8800-exec-6] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,162] - 00000172-3bd5-62e3-0000-000000000004, RECV: apiCallInfo --> request_sequence: "00000172-3bd5-62e3-0000-000000000004"
+received_time: 1590141739796
+response_time: 1590141740175
+timeUsedTotal: 332
+provider {
+  serverId: "Face-1:1-Server"
+  host: "0.0.0.0"
+  port: 9991
+  algType: "ID_Fpr64"
+  algVersion: "1.0.3.5"
+  featVersion: "1.0.3.5"
+  vendor: "eyecool.cn"
+  startedAt: 1590114925604
+}
+running_tasks: 1
+succeed_tasks: 3
+total_weight: 100
+
+18:02:20.184 [http-nio-8800-exec-6] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,180] - 提取特征-平台流水号[00000172-3bd5-62e3-0000-000000000004] 特征 [{
+	"algType":"ID_Fpr64",
+	"algVersion":"1.0.3.5",
+	"featVersion":"1.0.3.5",
+	"features":[
+		"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"
+	],
+	"host":"0.0.0.0",
+	"serverId":"Face-1:1-Server"
+}] use time [437ms]
+18:02:20.188 [http-nio-8800-exec-6] INFO  c.e.s.w.c.WebController - [faceExteaction,62] - =============faceExteaction:
+18:07:50.662 [http-nio-8800-exec-8] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,162] - 00000172-3bda-6e1a-0000-000000000005, RECV: apiCallInfo --> request_sequence: "00000172-3bda-6e1a-0000-000000000005"
+received_time: 1590142070333
+response_time: 1590142070643
+timeUsedTotal: 259
+provider {
+  serverId: "Face-1:1-Server"
+  host: "0.0.0.0"
+  port: 9991
+  algType: "ID_Fpr64"
+  algVersion: "1.0.3.5"
+  featVersion: "1.0.3.5"
+  vendor: "eyecool.cn"
+  startedAt: 1590114925604
+}
+running_tasks: 1
+succeed_tasks: 4
+total_weight: 100
+
+18:07:50.669 [http-nio-8800-exec-8] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,180] - 提取特征-平台流水号[00000172-3bda-6e1a-0000-000000000005] 特征 [{
+	"algType":"ID_Fpr64",
+	"algVersion":"1.0.3.5",
+	"featVersion":"1.0.3.5",
+	"features":[
+		"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"
+	],
+	"host":"0.0.0.0",
+	"serverId":"Face-1:1-Server"
+}] use time [371ms]
+18:07:50.670 [http-nio-8800-exec-8] INFO  c.e.s.w.c.WebController - [faceExteaction,62] - =============faceExteaction:
+18:14:00.862 [http-nio-8800-exec-10] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,162] - 00000172-3be0-144b-0000-000000000006, RECV: apiCallInfo --> request_sequence: "00000172-3be0-144b-0000-000000000006"
+received_time: 1590142440553
+response_time: 1590142440853
+timeUsedTotal: 252
+provider {
+  serverId: "Face-1:1-Server"
+  host: "0.0.0.0"
+  port: 9991
+  algType: "ID_Fpr64"
+  algVersion: "1.0.3.5"
+  featVersion: "1.0.3.5"
+  vendor: "eyecool.cn"
+  startedAt: 1590114925604
+}
+running_tasks: 1
+succeed_tasks: 5
+total_weight: 100
+
+18:14:00.872 [http-nio-8800-exec-10] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,180] - 提取特征-平台流水号[00000172-3be0-144b-0000-000000000006] 特征 [{
+	"algType":"ID_Fpr64",
+	"algVersion":"1.0.3.5",
+	"featVersion":"1.0.3.5",
+	"features":[
+		"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"
+	],
+	"host":"0.0.0.0",
+	"serverId":"Face-1:1-Server"
+}] use time [349ms]
+18:14:00.875 [http-nio-8800-exec-10] INFO  c.e.s.w.c.WebController - [faceExteaction,62] - =============faceExteaction:
+18:16:14.429 [http-nio-8800-exec-2] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,162] - 00000172-3be2-1e21-0000-000000000007, RECV: apiCallInfo --> request_sequence: "00000172-3be2-1e21-0000-000000000007"
+received_time: 1590142574149
+response_time: 1590142574421
+timeUsedTotal: 243
+provider {
+  serverId: "Face-1:1-Server"
+  host: "0.0.0.0"
+  port: 9991
+  algType: "ID_Fpr64"
+  algVersion: "1.0.3.5"
+  featVersion: "1.0.3.5"
+  vendor: "eyecool.cn"
+  startedAt: 1590114925604
+}
+running_tasks: 1
+succeed_tasks: 6
+total_weight: 100
+
+18:16:14.440 [http-nio-8800-exec-2] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,180] - 提取特征-平台流水号[00000172-3be2-1e21-0000-000000000007] 特征 [{
+	"algType":"ID_Fpr64",
+	"algVersion":"1.0.3.5",
+	"featVersion":"1.0.3.5",
+	"features":[
+		"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"
+	],
+	"host":"0.0.0.0",
+	"serverId":"Face-1:1-Server"
+}] use time [327ms]
+18:16:14.441 [http-nio-8800-exec-2] INFO  c.e.s.w.c.WebController - [faceExteaction,62] - =============faceExteaction:
+18:21:15.293 [http-nio-8800-exec-4] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,162] - 00000172-3be6-b513-0000-000000000008, RECV: apiCallInfo --> request_sequence: "00000172-3be6-b513-0000-000000000008"
+received_time: 1590142874975
+response_time: 1590142875287
+timeUsedTotal: 254
+provider {
+  serverId: "Face-1:1-Server"
+  host: "0.0.0.0"
+  port: 9991
+  algType: "ID_Fpr64"
+  algVersion: "1.0.3.5"
+  featVersion: "1.0.3.5"
+  vendor: "eyecool.cn"
+  startedAt: 1590114925604
+}
+running_tasks: 1
+succeed_tasks: 7
+total_weight: 100
+
+18:21:15.609 [http-nio-8800-exec-4] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,180] - 提取特征-平台流水号[00000172-3be6-b513-0000-000000000008] 特征 [{
+	"algType":"ID_Fpr64",
+	"algVersion":"1.0.3.5",
+	"featVersion":"1.0.3.5",
+	"features":[
+		"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"
+	],
+	"host":"0.0.0.0",
+	"serverId":"Face-1:1-Server"
+}] use time [710ms]
+18:21:15.610 [http-nio-8800-exec-4] INFO  c.e.s.w.c.WebController - [faceExteaction,62] - =============faceExteaction:
+18:51:15.334 [grpc-default-worker-ELG-1-7] INFO  c.e.g.s.GrpcChannel - [onNameResolverShutdown,149] - NameResolver Shutdowns.
+19:26:03.748 [http-nio-8800-exec-6] INFO  c.e.g.s.GrpcChannel - [onNameResolverStart,143] - NameResolver starts.
+19:26:03.774 [http-nio-8800-exec-6] INFO  c.e.g.s.GrpcChannel - [updateListener,100] - Update Listener.
+19:26:04.169 [http-nio-8800-exec-6] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,162] - 00000172-3c22-0bd5-0000-000000000009, RECV: apiCallInfo --> request_sequence: "00000172-3c22-0bd5-0000-000000000009"
+received_time: 1590146763819
+response_time: 1590146764133
+timeUsedTotal: 290
+provider {
+  serverId: "Face-1:1-Server"
+  host: "0.0.0.0"
+  port: 9991
+  algType: "ID_Fpr64"
+  algVersion: "1.0.3.5"
+  featVersion: "1.0.3.5"
+  vendor: "eyecool.cn"
+  startedAt: 1590114925604
+}
+running_tasks: 1
+succeed_tasks: 8
+total_weight: 100
+
+19:26:04.181 [http-nio-8800-exec-6] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,180] - 提取特征-平台流水号[00000172-3c22-0bd5-0000-000000000009] 特征 [{
+	"algType":"ID_Fpr64",
+	"algVersion":"1.0.3.5",
+	"featVersion":"1.0.3.5",
+	"features":[
+		"REYQAJUB0AIAAAAAAAgOxoVVkb/lW0a/QCJlvpxbhb/b1Yc+WowRv2ObB78qUIa+e/P1P6+Ggz8D0Ey/kF/cvcWwFj/NIvo/XReIP8A3/j4JGRw/QrDHvtsoID+/1TG/25eoPyZZkD7UBbK8sVoyvplkzD2bQ2i/u1zxvug5BcBk+Iw/0hozPjWC+78srq+/Igiwv5wrkD9pWo6+1LiiP9eu87/3moK/Vn00Ph+VLL8AHJi87JKUvysa0j8i61G+jbiKv6Hdqb7CZhE/GCsjv19eWj++jfe/VAYGwAEGT77z87Y/v/31vSVo4z8V+hbA5yljv+t9hj8/uci9ZDNeviQEi79687c/7jjSPiSJH77+u+G/xyGXP4sF4T+3jRQ/mz68vRTSJMBA7lE/PmqJv3qeBz8Zvoq/MAgeQJeiiD8Glzg/bAmwPmSaub+rStg9CRmhvzzczT/kVis/lL+wvvtNqj8C+Wy+NooSv+IU9b5Yvja/1MQ+P7NpJ0Brr0i/TZUuvx58ID7OLyXAFJyBvPC+tj/fpKc+xhUQP315KT/6pIA/42nDvr4jlj9z16c/Lk+sP11zLb/+SxfAL9IOPsPGBT8yb/g9J3XcPVhvgD+tnvO/Rln9Pq0+xj9AKx2+g655PtlBqj/YJ4g/pWWSvxbr4r8OwUy/3BxRP47F+D4xOSy/BLOHv85edz8qP6W+NpL5PvxNpj+xw2Q/fA8lvwDnoL7dLqS+sPwSvr0Ier/czDQ/pX0lwLbxm79D1Zy+aefFP3BHNj522oC++sagPNtkmz8vgo+/nvv8v/rrBMAbqzw/dd0PP1bVZb+pI6q9P3ifvzgMjz4hNVO/UUV5vrj62D/v1m4/Ky+OPvimer9aj7c/Rsecv97A9z/Udsm+EIvUvrGTMj8wNzA9LGHZvwB3Dr/UtvC/UsSYvy4s+z2zHqi/254XPjTVgL+yek0/hp6fvzHE7L7YNCu+dOmov5R3Dj/dPN0+H1TrvgU8rL7q4sE+4YSGv7Dnbb70tvO/KCXIPlVl+T+SGR4/07ecPn99Ib+ov52/XCOtPlw6YT8upvM+SSIAP2Bphz680YO/5FEHwNLk/b8nIRy9R1VLv3tpqz/kO7c/yh7FP6JTSr80kRW+fTwpPgT9tD6jjDa/k0cDPwrFAb4Iahg+C2OCPqi8sD/y0Bs+nlxGv1Xrzb5Z/ne/TDy+vy3+1L0Yyue94PXjvWr9vb4UsIa/ZOGbv0SlmL/m2ru/3LibP9seoj8Grj4/Zmitvs5etL7XINI+4Tvrv1IsZL+uZXK/nCTEPtB/lD7NBAi/PAkbPgqlAD/eMyC/grYhvr25Kr/CkEs/jNDrvXUvhL+4AB3AE1lbvpDgxL/PBre/o3YpP8SqNr/bNO2+oMaxP/LZh76UApQ9uAazv+YUQz7ic74/uJHdv78ev7/pkZK/0SmevyDF/z9ltPy89qS0PuqVWD/HVTFAosEEQOxE6z+v/BTA0vJ4P4z1iD8kQW8/8KEdvgFEKz60Onw/rnqBPyOrB8AkumK/guuPPxwdnbvpw70+TEwbP/y7hT+xxC2/06FZvxAX379XhXE//UMMvzf/cz/st1+/2LMMQHuDTT/SNMC/ye1+P44SPL81Qke+op3AvttLL76sEmW+9tjAPqLcuD5dsDU/QA9rP/C3ij5oavs7kPj+vkaRHT+ls6q/Symqv8oGPL80+kg/jA6oPivCsz5rtXO+kk9av3w/AT+QBu0/Yww1P2sQwz446Zm/EguxP87euL72pyg/WdMav3Znn74hS2K/DMoBv3Peqb8jlqo+aOvkv5cmjL/T+sU+zvaDvxdz+b5x9ww/ENJjv7LnMT8lZoM/El27PyKHw784no8+7wO0vCUfob/CBv4+Cd8+PlI9RT8ZDqc+/JBiPxlE+j/4Fp4/DrYEQG024j+j57M+MGbFPrOlzD4VjGg/3MXBvp8plr8cuUw+xDm7v426mj3cc4A+tuoRPpMUPr/NGyQ+9/LPvxHDnj5YBZm+fWJ+v0PZ273G9t8/ydxZP2KeLj+hrBg+u4dWP01lhTwa6WO/kHYiv0vCzrz2yM2+6Sk4PysajD66Xce/zOqDv5kihj8aMoY9sufiPpmFPz/Idk6+XXpxPljIaT9AQiu/LjisP0ULNz+0CB2/9j+FPz/BD7+uQ/M/CJ0cv+DOzT7b0nG+sGBMP2scsj9ZokQ/ZzsHQBTjgL/pufY9Nvy1v/GKYD/pLrM/H/vvvZxac78Pblw/0TM4Pk5Esr59aZU+0l1TPjgGCD9RSAJAdj+dP5gc9L2mw6w/+phFvzAsOj+YD6898TE3P+a1Zr5DgoQ/JaCWP6lZkj4uAm6+TXw5vnIhJEDHQ5+/9HBKPgaOw79CoyK/kfOTPkHSJD/eCaa/IaHsvSYoZr8tLOS+xVt/P1yEDT+lC6K/jPglP2nMJD6l3+Y/FMEEPju3v719OIA/epKVv03kxL/Fug7A0GYtQOyt/j8QbCC/CwCYP/ZndD7pBTM/W4IqPeaxpD6MUr+/14GevVDct78lfnu/Kjw6Pqwc7b6M9nY/8PBPPwg3Dr7Uk0S+hYJWP1WbNb4ZlF6+N6K2vnlQtb7n9dE+IgN6v83cDD92w8u9OmA4v5AnLL8X33E/3OyCP42g2j881V0/s0CUP+TMbL+wULI9mx0FwBenG782ejy9MnoTP00B6r8swi4/Fs2HPdAjjD85sh0+t4fiPCMtIj/YWYO/vUDMP0jCyD4lq3s/"
+	],
+	"host":"0.0.0.0",
+	"serverId":"Face-1:1-Server"
+}] use time [448ms]
+19:26:04.185 [http-nio-8800-exec-6] INFO  c.e.s.w.c.WebController - [faceExteaction,62] - =============faceExteaction:
+19:43:42.274 [http-nio-8800-exec-8] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,162] - 00000172-3c32-315f-0000-00000000000a, RECV: apiCallInfo --> request_sequence: "00000172-3c32-315f-0000-00000000000a"
+received_time: 1590147821962
+response_time: 1590147822250
+timeUsedTotal: 235
+provider {
+  serverId: "Face-1:1-Server"
+  host: "0.0.0.0"
+  port: 9991
+  algType: "ID_Fpr64"
+  algVersion: "1.0.3.5"
+  featVersion: "1.0.3.5"
+  vendor: "eyecool.cn"
+  startedAt: 1590114925604
+}
+running_tasks: 1
+succeed_tasks: 9
+total_weight: 100
+
+19:43:42.284 [http-nio-8800-exec-8] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,180] - 提取特征-平台流水号[00000172-3c32-315f-0000-00000000000a] 特征 [{
+	"algType":"ID_Fpr64",
+	"algVersion":"1.0.3.5",
+	"featVersion":"1.0.3.5",
+	"features":[
+		"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"
+	],
+	"host":"0.0.0.0",
+	"serverId":"Face-1:1-Server"
+}] use time [364ms]
+19:43:42.287 [http-nio-8800-exec-8] INFO  c.e.s.w.c.WebController - [faceExteaction,62] - =============faceExteaction:
+19:43:42.653 [http-nio-8800-exec-9] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceMatch,219] - 00000172-3c32-33ab-0000-00000000000b, SEND: index --> 0, node --> , feature --> 2064 bytes
+19:43:42.676 [http-nio-8800-exec-9] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceMatch,219] - 00000172-3c32-33ab-0000-00000000000b, SEND: index --> 1, node --> , feature --> 2064 bytes
+19:43:42.684 [http-nio-8800-exec-9] INFO  c.e.g.s.GrpcChannel - [onNameResolverStart,143] - NameResolver starts.
+19:43:42.684 [http-nio-8800-exec-9] INFO  c.e.g.s.GrpcChannel - [updateListener,100] - Update Listener.
+19:43:42.809 [http-nio-8800-exec-9] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceMatch,240] - 00000172-3c32-33ab-0000-00000000000b, RECV: apiCallInfo --> request_sequence: "00000172-3c32-33ab-0000-00000000000b"
+received_time: 1590147822712
+response_time: 1590147822770
+timeUsedTotal: 58
+provider {
+  serverId: "Face-1:1-Server"
+  host: "0.0.0.0"
+  port: 9991
+  algType: "ID_Fpr64"
+  algVersion: "1.0.3.5"
+  featVersion: "1.0.3.5"
+  vendor: "eyecool.cn"
+  startedAt: 1590114925604
+}
+running_tasks: 1
+succeed_tasks: 10
+total_weight: 2
+,used time 173ms
+19:43:42.911 [http-nio-8800-exec-9] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceMatch,286] - 人脸Match-平台流水号00000172-3c32-33ab-0000-00000000000b 大小2 结果[
+	{
+		"algType":"ID_Fpr64",
+		"algVersion":"1.0.3.5",
+		"featVersion":"1.0.3.5",
+		"host":"0.0.0.0",
+		"left":0,
+		"results":[
+			{
+				"right":1,
+				"score":100.0
+			}
+		],
+		"serverId":"Face-1:1-Server"
+	},
+	{
+		"algType":"ID_Fpr64",
+		"algVersion":"1.0.3.5",
+		"featVersion":"1.0.3.5",
+		"host":"0.0.0.0",
+		"left":1,
+		"results":[],
+		"serverId":"Face-1:1-Server"
+	}
+] use time [275ms]
+19:43:42.912 [http-nio-8800-exec-9] INFO  c.e.s.w.c.WebController - [faceMatch,104] - =============faceMatch:
+19:43:43.036 [http-nio-8800-exec-10] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceMatch,219] - 00000172-3c32-35bb-0000-00000000000c, SEND: index --> 0, node --> , feature --> 2064 bytes
+19:43:43.037 [http-nio-8800-exec-10] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceMatch,219] - 00000172-3c32-35bb-0000-00000000000c, SEND: index --> 1, node --> , feature --> 2064 bytes
+19:43:43.063 [http-nio-8800-exec-10] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceMatch,240] - 00000172-3c32-35bb-0000-00000000000c, RECV: apiCallInfo --> request_sequence: "00000172-3c32-35bb-0000-00000000000c"
+received_time: 1590147823028
+response_time: 1590147823037
+timeUsedTotal: 9
+provider {
+  serverId: "Face-1:1-Server"
+  host: "0.0.0.0"
+  port: 9991
+  algType: "ID_Fpr64"
+  algVersion: "1.0.3.5"
+  featVersion: "1.0.3.5"
+  vendor: "eyecool.cn"
+  startedAt: 1590114925604
+}
+running_tasks: 1
+succeed_tasks: 11
+total_weight: 2
+,used time 28ms
+19:43:43.064 [http-nio-8800-exec-10] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceMatch,286] - 人脸Match-平台流水号00000172-3c32-35bb-0000-00000000000c 大小2 结果[
+	{
+		"algType":"ID_Fpr64",
+		"algVersion":"1.0.3.5",
+		"featVersion":"1.0.3.5",
+		"host":"0.0.0.0",
+		"left":0,
+		"results":[
+			{
+				"right":1,
+				"score":100.0
+			}
+		],
+		"serverId":"Face-1:1-Server"
+	},
+	{
+		"algType":"ID_Fpr64",
+		"algVersion":"1.0.3.5",
+		"featVersion":"1.0.3.5",
+		"host":"0.0.0.0",
+		"left":1,
+		"results":[],
+		"serverId":"Face-1:1-Server"
+	}
+] use time [29ms]
+19:43:43.065 [http-nio-8800-exec-10] INFO  c.e.s.w.c.WebController - [faceMatch,104] - =============faceMatch:
+20:13:42.291 [grpc-default-worker-ELG-1-5] INFO  c.e.g.s.GrpcChannel - [onNameResolverShutdown,149] - NameResolver Shutdowns.
+20:13:43.074 [grpc-default-worker-ELG-1-7] INFO  c.e.g.s.GrpcChannel - [onNameResolverShutdown,149] - NameResolver Shutdowns.
+20:16:23.046 [http-nio-8800-exec-2] INFO  c.e.g.s.GrpcChannel - [onNameResolverStart,143] - NameResolver starts.
+20:16:23.049 [http-nio-8800-exec-2] INFO  c.e.g.s.GrpcChannel - [updateListener,100] - Update Listener.
+20:16:23.421 [http-nio-8800-exec-2] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,162] - 00000172-3c50-1dff-0000-00000000000d, RECV: apiCallInfo --> request_sequence: "00000172-3c50-1dff-0000-00000000000d"
+received_time: 1590149783065
+response_time: 1590149783378
+timeUsedTotal: 272
+provider {
+  serverId: "Face-1:1-Server"
+  host: "0.0.0.0"
+  port: 9991
+  algType: "ID_Fpr64"
+  algVersion: "1.0.3.5"
+  featVersion: "1.0.3.5"
+  vendor: "eyecool.cn"
+  startedAt: 1590114925604
+}
+running_tasks: 1
+succeed_tasks: 12
+total_weight: 100
+
+20:16:23.435 [http-nio-8800-exec-2] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,180] - 提取特征-平台流水号[00000172-3c50-1dff-0000-00000000000d] 特征 [{
+	"algType":"ID_Fpr64",
+	"algVersion":"1.0.3.5",
+	"featVersion":"1.0.3.5",
+	"features":[
+		"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"
+	],
+	"host":"0.0.0.0",
+	"serverId":"Face-1:1-Server"
+}] use time [396ms]
+20:16:23.445 [http-nio-8800-exec-2] INFO  c.e.s.w.c.WebController - [faceExteaction,62] - =============faceExteaction:
+20:20:03.205 [Thread-12] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - [doClose,993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35a9782c: startup date [Fri May 22 10:37:19 CST 2020]; root of context hierarchy
+20:20:03.390 [Thread-12] INFO  o.s.j.e.a.AnnotationMBeanExporter - [destroy,451] - Unregistering JMX-exposed beans on shutdown

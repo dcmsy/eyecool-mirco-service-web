@@ -1,0 +1,17 @@
+12:18:37.298 [http-nio-8800-exec-5] ERROR c.e.s.w.c.WebController - [faceImageLivenessDetection,179] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+12:18:37.919 [http-nio-8800-exec-8] ERROR c.e.s.w.c.WebController - [faceImageLivenessDetection,179] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+12:18:38.508 [http-nio-8800-exec-9] ERROR c.e.s.w.c.WebController - [faceImageLivenessDetection,179] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+12:18:39.088 [http-nio-8800-exec-1] ERROR c.e.s.w.c.WebController - [faceImageLivenessDetection,179] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+12:18:51.331 [http-nio-8800-exec-4] ERROR c.e.s.w.c.WebController - [faceImageLivenessDetection,179] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+12:18:51.847 [http-nio-8800-exec-6] ERROR c.e.s.w.c.WebController - [faceImageLivenessDetection,179] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+12:18:52.377 [http-nio-8800-exec-7] ERROR c.e.s.w.c.WebController - [faceImageLivenessDetection,179] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+12:18:52.894 [http-nio-8800-exec-10] ERROR c.e.s.w.c.WebController - [faceImageLivenessDetection,179] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+12:18:54.938 [http-nio-8800-exec-2] ERROR c.e.s.w.c.WebController - [faceImageLivenessDetection,179] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+12:19:16.304 [http-nio-8800-exec-8] ERROR c.e.s.w.c.WebController - [faceImageLivenessDetection,179] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+12:19:18.790 [http-nio-8800-exec-1] ERROR c.e.s.w.c.WebController - [faceImageLivenessDetection,179] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+12:19:20.817 [http-nio-8800-exec-3] ERROR c.e.s.w.c.WebController - [faceImageLivenessDetection,179] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+12:19:22.826 [http-nio-8800-exec-5] ERROR c.e.s.w.c.WebController - [faceImageLivenessDetection,179] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+12:21:59.086 [http-nio-8800-exec-10] ERROR c.e.s.w.c.WebController - [faceImageLivenessDetection,179] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+12:21:59.713 [http-nio-8800-exec-2] ERROR c.e.s.w.c.WebController - [faceImageLivenessDetection,179] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+12:22:00.282 [http-nio-8800-exec-4] ERROR c.e.s.w.c.WebController - [faceImageLivenessDetection,179] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+12:22:00.898 [http-nio-8800-exec-6] ERROR c.e.s.w.c.WebController - [faceImageLivenessDetection,179] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception

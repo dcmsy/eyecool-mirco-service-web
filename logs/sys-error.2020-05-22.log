@@ -1,0 +1,2 @@
+10:33:15.511 [http-nio-8800-exec-1] ERROR c.e.s.w.c.WebController - [faceExteaction,57] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+10:35:35.760 [http-nio-8800-exec-3] ERROR c.e.s.w.c.WebController - [faceExteaction,57] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception

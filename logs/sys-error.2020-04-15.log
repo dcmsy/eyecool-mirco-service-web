@@ -1,0 +1,1 @@
+11:34:59.301 [http-nio-8800-exec-10] ERROR c.e.s.w.c.WebController - [faceImageLivenessDetection,179] - io.grpc.StatusRuntimeException: UNAVAILABLE: io exception

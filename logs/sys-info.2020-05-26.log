@@ -1,0 +1,90 @@
+11:17:16.487 [main] INFO  c.e.s.w.ServiceWebApplication - [logStarting,50] - Starting ServiceWebApplication on computer.lan with PID 10844 (/Users/dcmsy/idea-workspace/eyecool-mirco-service-web/target/classes started by dcmsy in /Users/dcmsy/idea-workspace/eyecool-mirco-service-web)
+11:17:16.501 [main] INFO  c.e.s.w.ServiceWebApplication - [logStartupProfileInfo,659] - No active profile set, falling back to default profiles: default
+11:17:16.635 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - [prepareRefresh,590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f17e30d: startup date [Tue May 26 11:17:16 CST 2020]; root of context hierarchy
+11:17:17.421 [main] INFO  o.s.b.f.x.XmlBeanDefinitionReader - [loadBeanDefinitions,316] - Loading XML bean definitions from URL [file:/Users/dcmsy/idea-workspace/eyecool-mirco-service-web/target/classes/minisearch.xml]
+11:17:17.972 [main] INFO  c.e.g.a.GrpcServicesBeanFactoryPostProcessor - [postProcessBeanFactory,47] - Trying to enhance bean factory(org.springframework.beans.factory.support.DefaultListableBeanFactory)
+11:17:17.973 [main] INFO  c.e.g.a.GrpcServicesBeanFactoryPostProcessor - [postProcessBeanFactory,52] - Enhanced bean factory(org.springframework.beans.factory.support.DefaultListableBeanFactory) for Grpc Client Autowired.
+11:17:17.988 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - [<init>,154] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+11:17:18.530 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,91] - Tomcat initialized with port(s): 8800 (http)
+11:17:18.678 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 2043 ms
+11:17:18.928 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - [addRegistration,185] - Servlet dispatcherServlet mapped to [/]
+11:17:18.934 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - [configure,244] - Mapping filter: 'characterEncodingFilter' to: [/*]
+11:17:18.935 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - [configure,244] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+11:17:18.935 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - [configure,244] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+11:17:18.936 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - [configure,244] - Mapping filter: 'requestContextFilter' to: [/*]
+11:17:18.999 [main] INFO  c.e.g.a.GrpcServicesBeanFactoryPostProcessor - [getSuggestedValue,91] - grpc settings: cn.eyecool.grpc.autoconfiguration.GrpcServicesConfiguration@1fd9893c
+11:17:19.765 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - [registerHandler,373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:17:19.958 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - [initControllerAdviceCache,574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f17e30d: startup date [Tue May 26 11:17:16 CST 2020]; root of context hierarchy
+11:17:20.059 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/load],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.load()
+11:17:20.060 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/fingerMiniSearch],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.fingerMiniSearch()
+11:17:20.061 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/fingerExteaction],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.fingerExteaction()
+11:17:20.061 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/fingerMatch],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.fingerMatch()
+11:17:20.061 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/irisMatch],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.irisMatch()
+11:17:20.061 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/extractIrisFeature],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.extractIrisFeature()
+11:17:20.062 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/irisMiniSearch],methods=[POST || GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.eyecool.service.web.controller.CallMicroserviceController.irisMiniSearch()
+11:17:20.062 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/faceExteaction],methods=[POST || GET]}" onto public com.eyecool.abis.callmicroservice.common.FaceExtractResult com.eyecool.service.web.controller.CallMicroserviceController.faceExteaction()
+11:17:20.062 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/faceMatch],methods=[POST || GET]}" onto public java.util.List<com.eyecool.abis.callmicroservice.common.MatchBean> com.eyecool.service.web.controller.CallMicroserviceController.faceMatch()
+11:17:20.063 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/faceMiniSearch],methods=[POST || GET]}" onto public java.util.List<com.eyecool.abis.callmicroservice.common.FaceSearchResult> com.eyecool.service.web.controller.CallMicroserviceController.faceMiniSearch()
+11:17:20.063 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/faceVideoLivenessDetection],methods=[POST || GET]}" onto public boolean com.eyecool.service.web.controller.CallMicroserviceController.faceVideoLivenessDetection()
+11:17:20.063 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/faceImageLivenessDetection],methods=[POST || GET]}" onto public boolean com.eyecool.service.web.controller.CallMicroserviceController.faceImageLivenessDetection()
+11:17:20.064 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/callmicroservice/multiFaceDetection],methods=[POST || GET]}" onto public int com.eyecool.service.web.controller.CallMicroserviceController.multiFaceDetection()
+11:17:20.067 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/test/list],methods=[GET]}" onto public java.util.List<java.lang.String> com.eyecool.service.web.controller.TestController.getList()
+11:17:20.074 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/fingerMiniSearch],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.fingerMiniSearch(java.lang.String,java.lang.String,java.lang.Double,java.lang.Integer)
+11:17:20.074 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/fingerExteaction],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.fingerExteaction(java.lang.String)
+11:17:20.075 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/fingerMatch],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.fingerMatch(java.util.List<java.lang.String>)
+11:17:20.075 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/irisMatch],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.irisMatch(java.util.List<java.lang.String>)
+11:17:20.075 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/extractIrisFeature],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.extractIrisFeature(java.lang.String)
+11:17:20.075 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/irisMiniSearch],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.irisMiniSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.Double,java.lang.Integer)
+11:17:20.076 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/faceMatchList],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.faceMatchList(java.util.List<java.lang.String>)
+11:17:20.076 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/faceExteaction],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.faceExteaction(java.lang.String)
+11:17:20.076 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/faceMatch],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.faceMatch(java.lang.String,java.lang.String)
+11:17:20.077 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/faceMiniSearch],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.faceMiniSearch(java.lang.String,java.lang.String,java.lang.Double,java.lang.Integer)
+11:17:20.077 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/faceImageLivenessDetection],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.faceImageLivenessDetection(java.lang.String,java.lang.Double)
+11:17:20.077 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/callmicroservice/multiFaceDetection],methods=[POST || GET]}" onto public com.eyecool.service.web.model.ResultMsg com.eyecool.service.web.controller.WebController.multiFaceDetection(java.lang.String)
+11:17:20.079 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+11:17:20.080 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [register,547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+11:17:20.109 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - [registerHandler,373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:17:20.110 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - [registerHandler,373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+11:17:20.398 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - [afterSingletonsInstantiated,433] - Registering beans for JMX exposure on startup
+11:17:20.423 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - [finishRegistration,275] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+11:17:20.479 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,206] - Tomcat started on port(s): 8800 (http) with context path ''
+11:17:20.485 [main] INFO  c.e.s.w.ServiceWebApplication - [logStarted,59] - Started ServiceWebApplication in 4.79 seconds (JVM running for 6.512)
+11:17:20.487 [main] INFO  c.e.s.w.r.ApplicationRunnerImpl - [run,27] - =======Face-Service-Web-eyecool  is running=======
+11:17:28.819 [http-nio-8800-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,494] - FrameworkServlet 'dispatcherServlet': initialization started
+11:17:28.842 [http-nio-8800-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,509] - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+11:17:28.986 [http-nio-8800-exec-1] INFO  c.e.g.s.GrpcChannel - [onNameResolverStart,143] - NameResolver starts.
+11:17:28.987 [http-nio-8800-exec-1] INFO  c.e.g.s.GrpcChannel - [updateListener,100] - Update Listener.
+11:17:30.369 [http-nio-8800-exec-1] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,162] - 00000172-4efc-2cba-0000-000000000001, RECV: apiCallInfo --> request_sequence: "00000172-4efc-2cba-0000-000000000001"
+received_time: 1590463049460
+response_time: 1590463050298
+timeUsedTotal: 767
+provider {
+  serverId: "Face-1:1-Server"
+  host: "0.0.0.0"
+  port: 9991
+  algType: "ID_Fpr64"
+  algVersion: "1.0.3.5"
+  featVersion: "1.0.3.5"
+  vendor: "eyecool.cn"
+  startedAt: 1590114925604
+}
+running_tasks: 1
+succeed_tasks: 13
+total_weight: 100
+
+11:17:30.523 [http-nio-8800-exec-1] INFO  c.e.a.c.i.IBioFaceMicroServiceImpl - [faceExteaction,180] - 提取特征-平台流水号[00000172-4efc-2cba-0000-000000000001] 特征 [{
+	"algType":"ID_Fpr64",
+	"algVersion":"1.0.3.5",
+	"featVersion":"1.0.3.5",
+	"features":[
+		"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"
+	],
+	"host":"0.0.0.0",
+	"serverId":"Face-1:1-Server"
+}] use time [1633ms]
+11:17:30.528 [http-nio-8800-exec-1] INFO  c.e.s.w.c.WebController - [faceExteaction,62] - =============faceExteaction:
+11:47:30.364 [grpc-default-worker-ELG-1-3] INFO  c.e.g.s.GrpcChannel - [onNameResolverShutdown,149] - NameResolver Shutdowns.
+14:42:24.485 [http-nio-8800-exec-10] INFO  c.e.g.s.GrpcChannel - [onNameResolverStart,143] - NameResolver starts.
+14:42:24.490 [http-nio-8800-exec-10] INFO  c.e.g.s.GrpcChannel - [updateListener,100] - Update Listener.
+14:57:11.292 [Thread-13] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - [doClose,993] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f17e30d: startup date [Tue May 26 11:17:16 CST 2020]; root of context hierarchy
+14:57:11.460 [Thread-13] INFO  o.s.j.e.a.AnnotationMBeanExporter - [destroy,451] - Unregistering JMX-exposed beans on shutdown

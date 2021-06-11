@@ -1,0 +1,3 @@
+09:28:55.180 [main] ERROR c.e.s.w.ServiceWebApplication - [onApplicationEvent,56] - java.lang.NullPointerException
+09:32:04.511 [main] ERROR c.e.s.w.ServiceWebApplication - [onApplicationEvent,56] - java.lang.NullPointerException
+09:32:45.903 [main] ERROR c.e.s.w.ServiceWebApplication - [onApplicationEvent,56] - java.lang.NullPointerException

@@ -1,0 +1,2 @@
+10:05:25.118 [main] ERROR c.e.s.w.ServiceWebApplication - [onApplicationEvent,56] - java.lang.IllegalArgumentException: Parameter 'directory' is not a directory: /Users/dcmsy/Documents/9801
+10:05:47.017 [main] ERROR c.e.s.w.ServiceWebApplication - [onApplicationEvent,56] - java.lang.IllegalArgumentException: Parameter 'directory' is not a directory: /Users/dcmsy/Documents/9801

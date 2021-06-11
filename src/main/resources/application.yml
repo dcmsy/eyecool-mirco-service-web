@@ -1,0 +1,60 @@
+#logging:
+#  config: classpath:log4j2.xml
+
+
+server:
+  port: 8800
+  session-timeout: 60
+  tomcat.max-threads: 0
+  tomcat.uri-encoding: UTF-8
+
+#算法微服务
+cn:
+  eyecool:
+    grpc:
+      enabled: true
+      consumer:
+        match:
+          FeatureMatchService: grpc://192.168.60.21:9991?tag=Face-1:1-Server
+        extraction:
+          FeatureExtractionService: grpc://192.168.60.21:9991?tag=Face-1:1-Server
+        detection:
+          DetectionService: grpc://192.168.60.21:9991?tag=Face-1:1-Server
+        data_access:
+          DataSearchService: grpc://192.168.60.21:7788?tag=Search-Server-7788
+          DataMatchService: grpc://192.168.60.21:7788?tag=Search-Server-7788
+        face_service:
+
+eyecool:
+  match:
+    thread: 4
+  reMatch: false
+  LD_LIBRARY_PATH: /home/eyecool/311/vservice/ssnow9081
+  filestore:
+    basePath: /Users/dcmsy/Documents
+
+
+#cn:
+#  eyecool:
+#    grpc:
+#      enabled: true
+#      consumer:
+#        match:
+#          FeatureMatchService: grpc://127.0.0.1:8801?tag=Face-1:1-Server
+#        extraction:
+#          FeatureExtractionService: grpc://127.0.0.1:8801?tag=Face-1:1-Server
+#        detection:
+#          DetectionService: grpc://127.0.0.1:8801?tag=Face-1:1-Server
+#        data_access:
+#          DataSearchService: grpc://192.168.63.113:6778?tag=Search-Server-6778
+#          DataMatchService: grpc://192.168.63.113:6778?tag=Search-Server-6778
+#        face_service:
+#          FaceDetectionService: grpc://192.168.63.113:12001
+
+match:
+  # 测试比对的特征数据
+  jsonFilePath: /opt/matchFeatures.json
+  # 是否保存图片
+  saveFile: true
+  # 保存图片的路径
+  imgFilePath:  /tmp
